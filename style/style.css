@@ -87,7 +87,7 @@ header .header-button:hover {
    display: flex;
    flex-direction: column;
    width: 400px;
-   /* margin-top:-1000px; */
+   margin-top:-1000px;
    position: absolute;
    padding: 10px;
    left:calc(50vw - 210px);
@@ -121,10 +121,18 @@ header .header-button:hover {
    text-transform: uppercase;
 }
 .form .close-form{
+   background-color: #be9344;
+   border: 1px solid #fff;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    width: 20px;
    height: 20px;
    position: absolute;
    right: 20px;
    top:20px;
    border-radius: 50px;
+}
+.form .close-form i {
 }
