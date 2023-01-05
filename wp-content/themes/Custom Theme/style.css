@@ -45,7 +45,7 @@ header {
    gap: 20px;
    flex-wrap: wrap;
    margin: 0px;
-   font-size: 12px;
+   font-size: 16px;
    margin: auto;
 }
 
@@ -76,7 +76,7 @@ ul {
 }
 
 .menu-title {
-   font-size: 10px;
+   font-size: 12px;
 }
 
 .header-container {
@@ -101,6 +101,7 @@ header .header-button:hover {
 }
 
 .form {
+   z-index: 3;
    background-color: #131313;
    display: flex;
    flex-direction: column;
@@ -160,7 +161,6 @@ header .header-button:hover {
    border-radius: 50px;
 }
 
-.form .close-form i {}
 
 .poster {
    position: relative;
