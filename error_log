@@ -1,0 +1,9 @@
+[06-Jan-2023 11:51:55 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ']' in /home2/tashevsk/public_html/wp-content/themes/Custom Theme/index.php on line 3
+[06-Jan-2023 11:52:13 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ']' in /home2/tashevsk/public_html/wp-content/themes/Custom Theme/index.php on line 3
+[06-Jan-2023 11:52:26 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ']' in /home2/tashevsk/public_html/wp-content/themes/Custom Theme/index.php on line 3
+[06-Jan-2023 11:53:03 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ']' in /home2/tashevsk/public_html/wp-content/themes/Custom Theme/index.php on line 3
+[06-Jan-2023 11:54:23 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ']' in /home2/tashevsk/public_html/wp-content/themes/Custom Theme/index.php on line 3
+[06-Jan-2023 11:54:35 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ']' in /home2/tashevsk/public_html/wp-content/themes/Custom Theme/index.php on line 3
+[06-Jan-2023 11:55:02 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ')' in /home2/tashevsk/public_html/wp-content/themes/Custom Theme/index.php on line 3
+[06-Jan-2023 11:55:11 UTC] PHP Parse error:  syntax error, unexpected 'title' (T_STRING), expecting ')' in /home2/tashevsk/public_html/wp-content/themes/Custom Theme/index.php on line 3
+[06-Jan-2023 11:55:56 UTC] PHP Parse error:  syntax error, unexpected '5' (T_LNUMBER), expecting ')' in /home2/tashevsk/public_html/wp-content/themes/Custom Theme/index.php on line 3
