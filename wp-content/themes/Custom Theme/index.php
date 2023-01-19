@@ -1,12 +1,12 @@
 <?php include 'header.php'?>
 <main>
 <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]');?> 
-   
+   <div class="container">
 <div class="poster">
 		<div class="swiper-slide"><img src="<?php echo get_field('first_photo');?>" alt="poster"></div>
 		<div class="swiper-slide"><img src="<?php echo get_field('second_photo');?>" alt="poster"></div>
 	</div>
-
+</div>
 	<div class="comtainer">
 		<div class="map-section">
 <svg baseprofile="tiny" fill="#ececec"  stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".1" version="1.2" viewbox="0 0 1000 684" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +108,7 @@
  </circle>
 </svg>
 		<div>
-			<h5>Доставка до всіх країн Європи</h5>
+			<h5><?php echo get_field('ua_title');?></h5>
 			<p>Tashevskyi Trans UA - українська компанія, що займається доставкою грузів по території Європи</p>
 		</div>
 		</div>
