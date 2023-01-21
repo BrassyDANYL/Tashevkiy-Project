@@ -5,10 +5,11 @@ body {
    font-family: 'Oswald';
    background-color: #2c2c2c;
    margin-top: 120px;
+   transition: 0.5s;
 }
 
 body * {
-   transition: 0.3s;
+   transition: 0.5s;
 }
 
 header {
@@ -344,6 +345,7 @@ footer {
 
 .burger-menu-container {
    display: none;
+   padding: 20px 0px;
 }
 
 .mobile {
@@ -411,6 +413,20 @@ footer {
 
    .hide {
       top: -390px;
+   }
+   .map-section{
+      display: flex;
+      flex-direction: column-reverse;
+
+   }
+   .map-section h5{
+      text-align: center;
+   }
+   .map-section p{
+      font-size: 20px;
+   }
+   .map-section svg{
+      width: 100%;
    }
 }
 
@@ -520,6 +536,9 @@ footer {
 }
 
 /*Light theme settings*/
+.lighttheme body{
+   background-color: #fff;
+}
 .lighttheme .preloader {
    background: #fff;
 }
@@ -555,7 +574,7 @@ footer {
 }
 
 .lighttheme .burger-icon span {
-   color: black;
+   background-color: black;
 }
 
 .lighttheme footer {
@@ -597,4 +616,17 @@ footer {
 
 .lighttheme .change-language i {
    color: #2c2c2c;
+}
+.lighttheme .map-section svg{
+   fill: #2c2c2c;
+}
+.lighttheme .map-section path:hover{
+   fill: #be9344;
+}
+
+.lighttheme .map-section p{
+   color: #2c2c2c;
+}
+.lighttheme .burger-menu-container{
+   background-color: #fff;
 }
