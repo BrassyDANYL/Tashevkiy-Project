@@ -76,13 +76,33 @@ $('.change-language').click(function(){
 })
 
 // Change Language
-//var userLang = navigator.language || navigator.userLanguage;
-//console.log(userLang);
 
-// var lang = window.navigator.language || navigator.userLanguage
-// if (lang != "ru" || lang != "ua") {
-// 	LangSelect(lang);
-// }
+var lang = window.navigator.language || navigator.userLanguage
+console.log(lang);
+if (lang == 'ru-RU' || lang == 'uk' ) {
+	$('[data-ua]').each(function () {
+		$(this).text($(this).attr('data-ua'));
+		console.log('Ukrainian');
+	})
+}
+else{
+	$('[data-en]').each(function () {
+		$(this).text($(this).attr('data-en'));
+		console.log('English');
+	})
+}
+
+$('.en').click(function(){
+	$('[data-en]').each(function(){
+		$(this).text($(this).attr('data-en'));
+	})
+});
+$('.ua').click(function () {
+	$('[data-ua]').each(function () {
+		$(this).text($(this).attr('data-ua'));
+	})
+});
+
 // Preloader
 document.body.onload = function () {
 	document.body.classList.add('loaded_hiding');

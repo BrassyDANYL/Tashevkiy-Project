@@ -66,7 +66,7 @@
          <span class="ua"><img src="<?php echo get_template_directory_uri(); ?>/img/ukraine.png"></span>
       </div>
    <div class="header-container desktop">
-   <button class="header-button">Розрахувати вартість доставки</button>
+   <button class="header-button" data-ua="Розрахувати вартість доставки" data-en="CALCULATE THE COST OF DELIVERY"></button>
    </div>
    </ul>
 

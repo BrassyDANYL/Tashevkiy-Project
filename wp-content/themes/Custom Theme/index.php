@@ -108,7 +108,7 @@
  </circle>
 </svg>
 		<div>
-			<h5><?php echo get_field('ua_title');?></h5>
+			<h5 data-en="<?php echo get_field('en_title');?>" data-ua="<?php echo get_field('ua_title');?>"></h5>
 			<p>Tashevskyi Trans UA - українська компанія, що займається доставкою грузів по території Європи</p>
 		</div>
 		</div>
