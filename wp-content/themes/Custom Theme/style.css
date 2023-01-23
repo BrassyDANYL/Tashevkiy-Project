@@ -11,7 +11,12 @@ body {
 body * {
    transition: 0.5s;
 }
-
+main{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap:50px;
+}
 header {
    border-bottom: 1px solid #d8c690;
    background-color: #131313;

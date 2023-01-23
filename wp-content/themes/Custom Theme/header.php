@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Tashevskyi</title>
+   <title>Tashevskyi Trans UA</title>
    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/logo.png">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
@@ -31,15 +31,14 @@
       </ul>
       <ul class="header-sub-menu">
       <li class="menu-title menu-item">Контактний телефон:</li>
-      <li class="menu-item"><a href="tel:+380687617613">+380687617613</a></li>
-      <li class="menu-item"><a href="tel:+380977474797">+380977474797</a></li>
+      <li class="menu-item"><a href="tel:+380992323396">+380992323396</a></li>
       </ul>
       <div class="change-theme">
       </div>
       <div class="change-language">
          <i class="fa-solid fa-earth-europe"></i>
-         <span class="en"><img src="<?php echo get_template_directory_uri(); ?>/img/united-kingdom.png"></span>
-         <span class="ua"><img src="<?php echo get_template_directory_uri(); ?>/img/ukraine.png"></span>
+         <span class="en"><img alt="ukflag"src="<?php echo get_template_directory_uri(); ?>/img/united-kingdom.png"></span>
+         <span class="ua"><img alt="uaflag"src="<?php echo get_template_directory_uri(); ?>/img/ukraine.png"></span>
       </div>
        <div class="header-container">
    <button class="header-button"><i class="fa-regular fa-paper-plane"></i></button>
