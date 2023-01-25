@@ -20,7 +20,7 @@ main{
 header {
    border-bottom: 1px solid #d8c690;
    background-color: #131313;
-   z-index: 1000;
+   z-index: 6000;
    position: fixed;
    top: 0px;
    left: 0px;
@@ -31,6 +31,11 @@ header {
    max-width: 1140px;
    margin: 0 auto;
    padding: 0 20px;
+}
+.container-slider{
+   max-width: 1140px;
+      margin: 0 auto;
+      width: 100%;
 }
 
 .container-header {
@@ -119,16 +124,15 @@ header .header-button:hover {
 
 .wpcf7-form {
    text-align: center;
-   z-index: 1001;
+   z-index: 600;
    background-color: #131313;
    display: flex;
    flex-direction: column;
    width: 400px;
-   margin-top: -1000px;
-   position: absolute;
+   top: -1000px;
    padding: 10px;
    left: calc(50vw - 210px);
-   position: absolute;
+   position: fixed;
 }
 
 .wpcf7-form label {
@@ -372,6 +376,12 @@ footer {
       width: 100%;
       background: #2c2c2c;
       z-index: 1005;
+   }
+   .burger-icon{
+      z-index: 1010;
+   }
+   .logo{
+      z-index: 1010;
    }
 
    .burger-menu-container .header-menu {

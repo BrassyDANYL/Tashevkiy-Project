@@ -1,10 +1,10 @@
 $('.close-form').click(function () {
 	$('.wpcf7-form').css("transition", "0.5s");
-	$('.wpcf7-form').css("margin-top", "-1000px");
+	$('.wpcf7-form').css("top", "-1000px");
 });
 $('.header-button').click(function () {
 	$('.wpcf7-form').css("transition", "0.5s");
-	$('.wpcf7-form').css("margin-top", "0px");
+	$('.wpcf7-form').css("top", "100px");
 });
 $(document).ready(function () {
 	$('.poster').slick({

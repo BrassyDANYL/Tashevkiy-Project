@@ -1,7 +1,6 @@
 <?php include 'header.php'?>
 <main>
-<?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]');?> 
-   <div class="container">
+   <div class="container-slider">
 <div class="poster">
 		<div class="swiper-slide"><img src="<?php echo get_field('first_photo');?>" alt="poster"></div>
 		<div class="swiper-slide"><img src="<?php echo get_field('second_photo');?>" alt="poster"></div>
@@ -109,7 +108,7 @@
 </svg>
 		<div>
 			<h5 data-en="<?php echo get_field('en_title');?>" data-ua="<?php echo get_field('ua_title');?>"></h5>
-			<p>Tashevskyi Trans UA - українська компанія, що займається доставкою грузів по території Європи</p>
+			<p>Tashevskyi Trans UA - українська компанія, що займається доставкою грузів ячктериторією Європи</p>
 		</div>
 		</div>
 	</div>

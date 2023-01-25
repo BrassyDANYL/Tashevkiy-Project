@@ -40,7 +40,7 @@ ga('send', 'pageview');
       <li class="menu-item"><a href="mailto:tashevskyitrans@gmail.com">tashevskyitrans@gmail.com</a></li>
       </ul>
       <ul class="header-sub-menu">
-      <li class="menu-title menu-item">Контактний телефон:</li>
+      <li class="menu-title menu-item" data-ua="Контактний телефон:" data-en="Tel:"></li>
       <li class="menu-item"><a href="tel:+380992323396">+380992323396</a></li>
       </ul>
       <div class="change-theme">
@@ -63,9 +63,8 @@ ga('send', 'pageview');
       <li class="menu-item"><a href="mailto:tashevskyitrans@gmail.com">tashevskyitrans@gmail.com</a></li>
       </ul>
       <ul class="header-sub-menu">
-      <li class="menu-title menu-item">Контактний телефон:</li>
-      <li class="menu-item"><a href="tel:+380687617613">+380687617613</a></li>
-      <li class="menu-item"><a href="tel:+380977474797">+380977474797</a></li>
+      <li class="menu-title menu-item" data-ua="Контактний телефон:" data-en="Tel:"></li>
+      <li class="menu-item"><a href="tel:+380992323396">+380992323396</a></li>
       </ul>
       <div class="change-theme">
       </div>
@@ -80,6 +79,8 @@ ga('send', 'pageview');
    </ul>
 
    </div>
+<?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]');?> 
+
    </header>
    <div class="preloader">
   </div>
