@@ -8,6 +8,7 @@
    <title>Tashevskyi Trans UA</title>
    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/logo.png">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+   <meta name="google-site-verification" content="BkPltZk2ZOuEL5zHoCmWc9AlgxIy8EyG0Lj5QNqijxQ" />
 </head>
 <body>
    <header>
