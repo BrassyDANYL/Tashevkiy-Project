@@ -37,11 +37,11 @@ ga('send', 'pageview');
        <ul class="header-menu">
       <ul class="header-sub-menu">
       <li class="menu-title menu-item">Email:</li>
-      <li class="menu-item"><a href="mailto:tashevskyitrans@gmail.com">tashevskyitrans@gmail.com</a></li>
+      <li class="menu-item"><a href="mailto:<?php echo get_field('email');?>"><?php echo get_field('email');?></a></li>
       </ul>
       <ul class="header-sub-menu">
       <li class="menu-title menu-item" data-ua="Контактний телефон:" data-en="Tel:"></li>
-      <li class="menu-item"><a href="tel:+380992323396">+380992323396</a></li>
+      <li class="menu-item"><a href="tel:<?php echo get_field('phone_number');?>"><?php echo get_field('phone_number');?></a></li>
       </ul>
       <div class="change-theme">
       </div>
@@ -60,11 +60,11 @@ ga('send', 'pageview');
    <ul class="header-menu desktop">
       <ul class="header-sub-menu">
       <li class="menu-title menu-item">Email:</li>
-      <li class="menu-item"><a href="mailto:tashevskyitrans@gmail.com">tashevskyitrans@gmail.com</a></li>
+      <li class="menu-item"><a href="mailto:<?php echo get_field('email');?>"><?php echo get_field('email');?></a></li>
       </ul>
       <ul class="header-sub-menu">
       <li class="menu-title menu-item" data-ua="Контактний телефон:" data-en="Tel:"></li>
-      <li class="menu-item"><a href="tel:+380992323396">+380992323396</a></li>
+      <li class="menu-item"><a href="tel:<?php echo get_field('phone_number');?>"><?php echo get_field('phone_number');?></a></li>
       </ul>
       <div class="change-theme">
       </div>

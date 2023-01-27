@@ -244,16 +244,22 @@ header .header-button:hover {
    display: flex;
    flex-direction: row;
 }
+.map-section p{
+   font-size: 20px;
+}
 
 .map-section svg {
    width: 50%;
+   min-width: 500px
 }
 
 .map-section svg {
    fill: #be9344;
    max-height: 400px;
 }
-
+.map-section path{
+   transition: 1s;
+}
 .map-section path:hover {
    fill: #fff;
 }
@@ -443,6 +449,7 @@ footer {
    }
    .map-section svg{
       width: 100%;
+      min-width: 280px;
    }
 }
 @media (max-width:430px) {
