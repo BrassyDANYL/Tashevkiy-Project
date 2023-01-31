@@ -43,6 +43,9 @@ ga('send', 'pageview');
       <li class="menu-title menu-item" data-ua="Контактний телефон:" data-en="Tel:"></li>
       <li class="menu-item"><a href="tel:<?php echo get_field('phone_number');?>"><?php echo get_field('phone_number');?></a></li>
       </ul>
+      <ul class="header-sub-menu">
+         <a href="viber://add?number=+380992323396">viber</a>
+      </ul>
       <div class="change-theme">
       </div>
       <div class="change-language">
