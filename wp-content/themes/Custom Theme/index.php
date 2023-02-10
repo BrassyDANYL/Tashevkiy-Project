@@ -112,5 +112,30 @@
 		</div>
 		</div>
 	</div>
+	<div class="container-slider">
+		<h4 class="reviews-title" data-en="Reviews" data-ua="Відгуки про нас"></h4>
+		<div class="slider-reviews">
+
+			<div class="slider-review">
+				<div class="review-author" data-en="<?php echo get_field('review_author_en');?>" data-ua="<?php echo get_field('review_author_ua');?>"></div>
+				<div class="review-content" data-en="<?php echo get_field('review_content_en');?>" data-ua="<?php echo get_field('review_content_ua');?>"></div>
+			</div>
+
+			<div class="slider-review">
+				<div class="review-author" data-en="<?php echo get_field('review_author_en_2');?>" data-ua="<?php echo get_field('review_author_ua_2');?>"></div>
+				<div class="review-content" data-en="<?php echo get_field('review_content_en_2');?>" data-ua="<?php echo get_field('review_content_ua_2');?>"></div>
+			</div>
+
+			<div class="slider-review">
+				<div class="review-author" data-en="<?php echo get_field('review_author_en_3');?>" data-ua="<?php echo get_field('review_author_ua_3');?>"></div>
+				<div class="review-content" data-en="<?php echo get_field('review_content_en_3');?>" data-ua="<?php echo get_field('review_content_ua_3');?>"></div>
+			</div>
+
+			<div class="slider-review">
+				<div class="review-author" data-en="<?php echo get_field('review_author_en_4');?>" data-ua="<?php echo get_field('review_author_ua_4');?>"></div>
+				<div class="review-content" data-en="<?php echo get_field('review_content_en_4');?>" data-ua="<?php echo get_field('review_content_ua_4');?>"></div>
+			</div>
+		</div>
+	</div>
    </main>
 <?php require 'footer.php'?>
