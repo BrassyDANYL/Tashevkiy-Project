@@ -113,7 +113,7 @@
 		</div>
 	</div>
 	<div class="container-slider">
-		<h4 class="reviews-title" data-en="Reviews" data-ua="Відгуки про нас"></h4>
+		<h4 class="reviews-title" data-en="Reviews" data-ua="Відгуки"></h4>
 		<div class="slider-reviews">
 
 			<div class="slider-review">
@@ -137,5 +137,13 @@
 			</div>
 		</div>
 	</div>
+	<div class="container">
+	<div class="main-form">
+		
+<?php echo do_shortcode('[contact-form-7 id="54" title="Contact form 2"]');?> 
+<img src="<?php echo get_template_directory_uri(); ?>/img/bridge.jpg">
+
+	</div>
+	</div>
    </main>
-<?php require 'footer.php'?>
+<?php require 'footer.php'?>	

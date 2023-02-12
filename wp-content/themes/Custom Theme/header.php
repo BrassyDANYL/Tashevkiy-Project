@@ -45,6 +45,8 @@ ga('send', 'pageview');
       </ul>
       <ul class="header-sub-menu">
          <a href="https://tinyurl.com/kj42dm9e">viber</a>
+         <a href="https://api.whatsapp.com/send/?phone=380992323396">whatsapp</a>
+
       </ul>
       <div class="change-theme">
       </div>
@@ -82,8 +84,8 @@ ga('send', 'pageview');
    </ul>
 
    </div>
+   
 <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]');?> 
-
    </header>
    <div class="preloader">
   </div>
