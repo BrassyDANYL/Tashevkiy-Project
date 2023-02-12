@@ -44,7 +44,7 @@ ga('send', 'pageview');
       <li class="menu-item"><a href="tel:<?php echo get_field('phone_number');?>"><?php echo get_field('phone_number');?></a></li>
       </ul>
       <ul class="header-sub-menu">
-         <a href="viber://forward?text=380992323396">viber</a>
+         <a href="viber://add?number=380992323396">viber</a>
          <a href="https://api.whatsapp.com/send/?phone=380992323396">whatsapp</a>
 
       </ul>
