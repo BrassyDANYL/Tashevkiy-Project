@@ -137,12 +137,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="full-width">
+		<div class="container">
 	<div class="main-form">
 		
 <?php echo do_shortcode('[contact-form-7 id="54" title="Contact form 2"]');?> 
-<img src="<?php echo get_template_directory_uri(); ?>/img/bridge.jpg">
-
+</div>
 	</div>
 	</div>
    </main>

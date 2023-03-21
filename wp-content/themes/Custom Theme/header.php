@@ -10,6 +10,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
    <meta name="google-site-verification" content="BkPltZk2ZOuEL5zHoCmWc9AlgxIy8EyG0Lj5QNqijxQ" />
    <script>
+      
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -18,6 +19,13 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-XXXXX-Y', 'auto');
 ga('send', 'pageview');
 </script>
+<script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.40.0-2013.08.13'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.5.2'></script>
 </head>
 <body>
    <header>
@@ -43,9 +51,9 @@ ga('send', 'pageview');
       <li class="menu-title menu-item" data-ua="Контактний телефон:" data-en="Tel:"></li>
       <li class="menu-item"><a href="tel:<?php echo get_field('phone_number');?>"><?php echo get_field('phone_number');?></a></li>
       </ul>
-      <ul class="header-sub-menu">
-         <a href="viber://add?number=380992323396">viber</a>
-         <a href="https://api.whatsapp.com/send/?phone=380992323396">whatsapp</a>
+      <ul class="header-sub-menu social-links">
+         <a class="social-link" href="viber://add?number=380992323396"><i class="fa-brands fa-viber"></i></a>
+         <a class="social-link" href="https://api.whatsapp.com/send/?phone=380992323396"><i class="fa-brands fa-whatsapp"></i></a>
 
       </ul>
       <div class="change-theme">

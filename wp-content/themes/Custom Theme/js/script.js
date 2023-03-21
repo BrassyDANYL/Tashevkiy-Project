@@ -28,6 +28,9 @@ $(document).ready(function () {
 		arrows: false,
 	});
 });
+$(document).ready(function(){
+	$('.wpcf7-submit').val('');
+})
 
 // Change Theme
 
