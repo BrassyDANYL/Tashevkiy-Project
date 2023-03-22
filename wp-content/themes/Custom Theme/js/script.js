@@ -167,4 +167,28 @@ function changeColor(color1, color2, color3){
 		}, 100);
 	}
 
+//validation
+$(document).ready(function () {
+	$(".wpcf7-form").submit(function (e) {
+		e.preventDefault();
 
+		var form = $(this);
+
+		$.ajax({
+			url: form.attr("action"),
+			method: form.attr("method"),
+			data: form.serialize(),
+			dataType: "json",
+			success: function (response) {
+				if (response.status == "success") {
+					// Повідомлення про успішну відправку форми
+					console.log('success');
+				} else {
+					// Повідомлення про помилку валідації
+					console.log('error');
+
+				}
+			}
+		});
+	});
+});
