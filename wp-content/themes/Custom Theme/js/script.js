@@ -28,7 +28,7 @@ $(document).ready(function () {
 		arrows: false,
 	});
 });
-$(document).ready(function(){
+$(document).ready(function () {
 	$('.wpcf7-submit').val('');
 })
 
@@ -38,7 +38,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 	$('.change-theme').empty();
 	$('.change-theme').html('<i class="fa-regular fa-sun"></i>');
 	$('.change-theme').addClass('dark');
-		changeColor('#be9344', '#FAD6A5', '#F1CA89');
+	changeColor('#be9344', '#FAD6A5', '#F1CA89');
 
 }
 else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
@@ -88,33 +88,33 @@ $('.change-theme').click(function () {
 
 // Change Language
 
-$('.change-language').click(function(){
-	if ($(this).hasClass('open-language')){
+$('.change-language').click(function () {
+	if ($(this).hasClass('open-language')) {
 		$(this).removeClass('open-language')
 	}
-	else{
-	$(this).addClass('open-language');	
+	else {
+		$(this).addClass('open-language');
 	}
 })
 
 
 var lang = window.navigator.language || navigator.userLanguage
 console.log(lang);
-if (lang == 'ru-RU' || lang == 'uk' ) {
+if (lang == 'ru-RU' || lang == 'uk') {
 	$('[data-ua]').each(function () {
 		$(this).text($(this).attr('data-ua'));
 		console.log('Ukrainian');
 	})
 }
-else{
+else {
 	$('[data-en]').each(function () {
 		$(this).text($(this).attr('data-en'));
 		console.log('English');
 	})
 }
 
-$('.en').click(function(){
-	$('[data-en]').each(function(){
+$('.en').click(function () {
+	$('[data-en]').each(function () {
 		$(this).text($(this).attr('data-en'));
 	})
 });
@@ -145,7 +145,7 @@ $(document).ready(function () {
 let color1;
 let color2;
 let color3;
-function changeColor(color1, color2, color3){
+function changeColor(color1, color2, color3) {
 	setInterval(function () {
 		var list = $(".map-section path").toArray();
 		var elemlength = list.length;
@@ -156,39 +156,59 @@ function changeColor(color1, color2, color3){
 		var randomitem2 = list[randomnum2];
 		var randomitem3 = list[randomnum3];
 		setTimeout(function () {
-				$(randomitem).css("fill", color2);
+			$(randomitem).css("fill", color2);
 		}, 100);
 		setTimeout(function () {
-				$(randomitem2).css("fill", color1);
+			$(randomitem2).css("fill", color1);
 		}, 200);
 		setTimeout(function () {
-				$(randomitem3).css("fill", color3);
-			})
-		}, 100);
-	}
+			$(randomitem3).css("fill", color3);
+		})
+	}, 100);
+}
 
 //validation
-$(document).ready(function () {
-	$(".wpcf7-form").submit(function (e) {
-		e.preventDefault();
+$('#myForm').submit(function (event) {
+	// запобігаємо перезавантаженню сторінки під час відправки даних
+	event.preventDefault();
 
-		var form = $(this);
+	// валідація форми
+	var name = $('#name').val();
+	var email = $('#email').val();
+	var password = $('#password').val();
 
-		$.ajax({
-			url: form.attr("action"),
-			method: form.attr("method"),
-			data: form.serialize(),
-			dataType: "json",
-			success: function (response) {
-				if (response.status == "success") {
-					// Повідомлення про успішну відправку форми
-					console.log('success');
-				} else {
-					// Повідомлення про помилку валідації
-					console.log('error');
+	if (name === '') {
+		alert('Введіть ім\'я');
+		return;
+	}
 
-				}
-			}
-		});
+	if (email === '') {
+		alert('Введіть email');
+		return;
+	}
+
+	if (password === '') {
+		alert('Введіть номер телефону');
+		return;
+	}
+
+	// відправка даних на сервер з використанням Ajax
+	$.ajax({
+		url: 'server.php',
+		type: 'post',
+		data: {
+			name: name,
+			email: email,
+			phone: phone
+		},
+		success: function (response) {
+			// обробка відповіді від сервера
+			if (response === 'success')
+				alert('Дані успішно надіслано');
+		},
+		error: function () {
+			// Відображення повідомлення про помилку відправки даних
+			alert('Помилка відправки даних');
+		}
 	});
 });

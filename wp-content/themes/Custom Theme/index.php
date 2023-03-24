@@ -140,8 +140,23 @@
 	<div class="full-width">
 		<div class="container">
 	<div class="main-form">
-		
-<?php echo do_shortcode('[contact-form-7 id="54" title="Contact form 2"]');?> 
+<!-- 		
+<?php echo do_shortcode('[contact-form-7 id="54" title="Contact form 2"]');?>  -->
+<form id="myForm" method="post">
+  <label for="name">Ім'я:</label>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br>
+
+  <label for="phone">Номер телефону:</label>
+  <input type="phone" id="phone" name="phone"><br>
+
+  <label for="reason">Деталі:</label>
+  <textarea name="reason" id="reason" cols="30" rows="10"></textarea>
+
+  <button type="submit" id="submit-btn">Надіслати</button>
+</form>
 </div>
 	</div>
 	</div>
