@@ -162,3 +162,4 @@
 	</div>
    </main>
 <?php require 'footer.php'?>	
+<?php require 'server.php'?>
