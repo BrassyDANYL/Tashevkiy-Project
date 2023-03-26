@@ -175,7 +175,7 @@ $('#myForm').submit(function (event) {
 	// валідація форми
 	var name = $('#name').val();
 	var email = $('#email').val();
-	var password = $('#password').val();
+	var phone = $('#phone').val();
 
 	if (name === '') {
 		alert('Введіть ім\'я');
@@ -187,14 +187,14 @@ $('#myForm').submit(function (event) {
 		return;
 	}
 
-	if (password === '') {
+	if (phone === '') {
 		alert('Введіть номер телефону');
 		return;
 	}
 
 	// відправка даних на сервер з використанням Ajax
 	$.ajax({
-		url: 'server.php',
+		url: '../server.php',
 		type: 'post',
 		data: {
 			name: name,
