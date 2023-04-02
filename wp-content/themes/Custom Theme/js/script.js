@@ -194,8 +194,8 @@ $('#myForm').submit(function (event) {
 
 	// відправка даних на сервер з використанням Ajax
 	$.ajax({
-		url: '../server.php',
-		type: 'post',
+		url: $('#myForm').attr('action'),
+		type: 'POST',
 		data: {
 			name: name,
 			email: email,

@@ -597,7 +597,11 @@ footer {
       min-width: 280px;
    }
 }
-
+@media (max-width:580px) {
+   #wpcf7-f54-o2 .wpcf7-textarea{
+      width: 100%;
+   }
+}
 @media (max-width:430px) {
    #wpcf7-f5-o1 .wpcf7-form {
       width: 100%;

@@ -138,11 +138,10 @@
 		</div>
 	</div>
 	<div class="full-width">
-		<div class="container">
 	<div class="main-form">
-<!-- 		
-<?php echo do_shortcode('[contact-form-7 id="54" title="Contact form 2"]');?>  -->
-<form id="myForm" method="post" action="server.php">
+		
+<?php echo do_shortcode('[contact-form-7 id="54" title="Contact form 2"]');?> 
+<!-- <form id="myForm" method="post" action="server.php">
   <label for="name">Ім'я:</label>
   <input type="text" id="name" name="name"><br>
 
@@ -156,9 +155,9 @@
   <textarea name="reason" id="reason" cols="30" rows="10"></textarea>
 
   <button type="submit" id="submit-btn">Надіслати</button>
-</form>
+</form> -->
+
 </div>
 	</div>
-	</div>
    </main>
-<?php require 'footer.php'?>	
+<?php require 'footer.php';?>	

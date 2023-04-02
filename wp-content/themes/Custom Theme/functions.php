@@ -11,6 +11,9 @@ function CustomScripts(){
    wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.6.0.min.js');
    wp_enqueue_script( 'jquery' );
    wp_enqueue_script('myscript', get_template_directory_uri() . '/js/script.js', array('jquery'), null, true);
+   wp_localize_script( 'myscript', 'contact_form_vars', array(
+        'ajax_url' => admin_url( 'admin-ajax.php' )
+    ) );
 }
    add_theme_support('custom-logo');
    add_theme_support('post-thumbnails');
