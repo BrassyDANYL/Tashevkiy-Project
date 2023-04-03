@@ -168,47 +168,47 @@ function changeColor(color1, color2, color3) {
 }
 
 //validation
-$('#myForm').submit(function (event) {
-	// запобігаємо перезавантаженню сторінки під час відправки даних
-	event.preventDefault();
+// $('#myForm').submit(function (event) {
+// 	// запобігаємо перезавантаженню сторінки під час відправки даних
+// 	event.preventDefault();
 
-	// валідація форми
-	var name = $('#name').val();
-	var email = $('#email').val();
-	var phone = $('#phone').val();
+// 	// валідація форми
+// 	var name = $('#name').val();
+// 	var email = $('#email').val();
+// 	var phone = $('#phone').val();
 
-	if (name === '') {
-		alert('Введіть ім\'я');
-		return;
-	}
+// 	if (name === '') {
+// 		alert('Введіть ім\'я');
+// 		return;
+// 	}
 
-	if (email === '') {
-		alert('Введіть email');
-		return;
-	}
+// 	if (email === '') {
+// 		alert('Введіть email');
+// 		return;
+// 	}
 
-	if (phone === '') {
-		alert('Введіть номер телефону');
-		return;
-	}
+// 	if (phone === '') {
+// 		alert('Введіть номер телефону');
+// 		return;
+// 	}
 
-	// відправка даних на сервер з використанням Ajax
-	$.ajax({
-		url: $('#myForm').attr('action'),
-		type: 'POST',
-		data: {
-			name: name,
-			email: email,
-			phone: phone
-		},
-		success: function (response) {
-			// обробка відповіді від сервера
-			if (response === 'success')
-				alert('Дані успішно надіслано');
-		},
-		error: function () {
-			// Відображення повідомлення про помилку відправки даних
-			alert('Помилка відправки даних');
-		}
-	});
-});
+// 	// відправка даних на сервер з використанням Ajax
+// 	$.ajax({
+// 		url: $('#myForm').attr('action'),
+// 		type: 'POST',
+// 		data: {
+// 			name: name,
+// 			email: email,
+// 			phone: phone
+// 		},
+// 		success: function (response) {
+// 			// обробка відповіді від сервера
+// 			if (response === 'success')
+// 				alert('Дані успішно надіслано');
+// 		},
+// 		error: function () {
+// 			// Відображення повідомлення про помилку відправки даних
+// 			alert('Помилка відправки даних');
+// 		}
+// 	});
+// });

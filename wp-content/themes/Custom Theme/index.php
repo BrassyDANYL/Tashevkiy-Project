@@ -141,7 +141,7 @@
 	<div class="main-form">
 		
 <?php echo do_shortcode('[contact-form-7 id="54" title="Contact form 2"]');?> 
-<!-- <form id="myForm" method="post" action="server.php">
+<!-- <form id="myForm" method="post">
   <label for="name">Ім'я:</label>
   <input type="text" id="name" name="name"><br>
 
