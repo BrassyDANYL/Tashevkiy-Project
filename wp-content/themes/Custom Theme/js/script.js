@@ -5,6 +5,8 @@ $('.close-form').click(function () {
 $('.header-button').click(function () {
 	$('#wpcf7-f5-o1').find('.wpcf7-form').css("transition", "0.5s");
 	$('#wpcf7-f5-o1').find('.wpcf7-form').css("top", "100px");
+	$('.black-screen').css("display", "block");
+	$('.black-screen').css("opacity", "0,5")
 });
 $(document).ready(function () {
 	$('.poster').slick({

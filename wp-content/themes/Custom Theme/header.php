@@ -86,8 +86,9 @@ ga('send', 'pageview');
    </ul>
 
    </div>
-   
-<?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1" ]');?> 
+   <div class="black-screen">
+      <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1" ]');?> 
+   </div>
    </header>
    <div class="preloader">
   </div>

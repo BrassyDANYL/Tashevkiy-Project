@@ -22,7 +22,7 @@ main {
 header {
    border-bottom: 1px solid #d8c690;
    background-color: #131313;
-   z-index: 6000;
+   z-index: 599;
    position: fixed;
    top: 0px;
    left: 0px;
@@ -749,7 +749,16 @@ footer {
    position: relative;
    top:0px;
 } */
-
+.black-screen{
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   opacity: 0;
+   display: none;
+   z-index: 601;
+   background-color: #131313;
+   top: 0px;
+}
 /*Light theme settings*/
 .lighttheme body {
    background-color: #fff;
