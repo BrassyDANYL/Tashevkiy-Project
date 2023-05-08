@@ -753,11 +753,11 @@ footer {
    position: absolute;
    width: 100vw;
    height: 100vh;
-   opacity: 0;
-   display: none;
+   visibility: hidden;
    z-index: 601;
-   background-color: #131313;
+   background-color: rgba(0, 0, 0, 0.5);
    top: 0px;
+   transition: 0.5s;
 }
 /*Light theme settings*/
 .lighttheme body {
